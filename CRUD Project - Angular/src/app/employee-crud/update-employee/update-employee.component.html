@@ -1,0 +1,19 @@
+<h2>Update Employee</h2>
+<div [hidden]="result">
+    <form (ngSubmit)="updateEmployee()">
+        <label for="employeeId">Employee Id</label>
+        <input type="text" name="employeeId" [(ngModel)]="employee.employeeId" readonly="true">
+
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Your name.." [(ngModel)]="employee.name">
+
+        <label for="salary">salary</label>
+        <input type="text" name="salary" placeholder="Your salary.." [(ngModel)]="employee.salary">
+
+        <input type="submit" value="Update employee">
+    </form>
+</div>
+<div [hidden] = "!result">
+    <p>Employee details updated successfully!</p>
+    <button (click)="gotoHome()">Back To Home</button>
+</div>

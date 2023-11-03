@@ -1,0 +1,16 @@
+<h2>Add New Employee</h2>
+<div [hidden]="result">
+    <form (ngSubmit)="saveEmployee()">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Your name.." [(ngModel)]="employee.name">
+
+        <label for="salary">salary</label>
+        <input type="text" name="salary" placeholder="Your salary.." [(ngModel)]="employee.salary">
+
+        <input type="submit" value="Add new employee">
+    </form>
+</div>
+<div [hidden] = "!result">
+    <p>Employee details submitted successfully!</p>
+    <button (click)="gotoHome()">Back To Home</button>
+</div>
