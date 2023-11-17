@@ -1,0 +1,42 @@
+<main>
+    <header class="main-header">
+
+        <a class="main-header__brand">Employee Travel Portal</a>
+
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item main-nav__item__cta">
+                    <a (click)="logincheck()">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <form [hidden]="!login">
+            <!-- <h2>User Login</h2> -->
+            <label>
+                <h3>Employee Login Id</h3>
+            </label>
+            <input type="text" name="employeeId" [(ngModel)]="employeeDetails.employeeId">
+            <label>
+                <h3>Password</h3>
+            </label>
+            <input type="password" name="password" [(ngModel)]="employeeDetails.password">
+            <br><br>
+            <input type="submit" value="Login" (click)="userLogin()">
+        </form>
+        <br>
+    </div>
+</main>
+<footer class="main-footer">
+    <nav>
+        <ul class="main-footer__links">
+            <li class="main-footer__link">
+                <a href="#">Support</a>
+            </li>
+            <li class="main-footer__link">
+                <a href="#">Terms of Use</a>
+            </li>
+        </ul>
+    </nav>
+</footer>

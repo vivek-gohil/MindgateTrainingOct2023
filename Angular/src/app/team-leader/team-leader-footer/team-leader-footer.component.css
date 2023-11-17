@@ -1,0 +1,127 @@
+.main-header {
+    width: 100%;
+    padding: 8px 16px;
+    background: #2ddf5c;
+}
+
+.main-header>div {
+    display: inline-block;
+}
+
+.main-header__brand {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0e4f1f;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: 80%;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0px;
+}
+
+.main-nav__item__cta a {
+    color: white;
+    background: #ff1b68;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+input[type=text] , input[type=password]  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] , button {
+    width: 100%;
+    background-color: #2ddf5c;;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+.main-footer {
+    background: black;
+   padding: 10px;
+}
+
+.main-footer__links {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer__link {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.main-footer__link a {
+    text-decoration: none;
+    color: white;
+    margin: 40px 0px;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.main-nav__item__cta a:hover,
+.main-nav__item__cta a:active {
+    color: #ff1b68;
+    background: white;
+    border: none;
+}
+
+.button:hover,
+.button:active {
+    color: #0e4f1f;
+    background: white;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #ccc;
+}
